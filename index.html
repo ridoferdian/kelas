@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XII TKJ 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="public/output.css" />
+    <link rel="stylesheet" href="public/style.css" />
+
+    <style>
+      body {
+        height: 1500px;
+      }
+    </style>
+  </head>
+  <body class="bg-[]">
+    <!-- navbar start -->
+    <section class="bg-transparent z-[999] fixed w-full left-0 top-0">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between md:justify-around mx-auto p-4 text-primary"
+      >
+        <a
+          href="https://www.instagram.com/xii.tkj1_smuhero/"
+          target="_blank"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <span class="self-center text-2xl font-semibold font-primary"
+            >XII TKJ 1</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          id="hamburger"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden"
+        >
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <nav
+          class="hidden w-full md:block md:w-auto font-primary text-center"
+          id="navbar"
+        >
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-stroke rounded-lg bg-secondary md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent"
+          >
+            <li>
+              <a href="#" class="navbar">Home</a>
+            </li>
+            <li>
+              <a href="#" class="navbar">struktur</a>
+            </li>
+            <li>
+              <a href="#" class="navbar">Galeri Kelas</a>
+            </li>
+            <li>
+              <a href="#" class="navbar">Struktur Kelas</a>
+            </li>
+            <li>
+              <a href="#" class="navbar">Murid</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- navbar end -->
+
+    <!-- home start -->
+    <section class="relative flex justify-center items-center">
+      <!-- Section 2 (Background Image) -->
+      <div class="absolute md:inset-0 bottom-0">
+        <img
+          class="w-full h-auto object-cover"
+          src="image/background.png"
+          alt="Background Image"
+        />
+      </div>
+
+      <!-- Section 1 (Content) -->
+      <div
+        class="relative z-10 py-28 max-w-4xl w-full flex flex-col items-center bg-[url('/image/svg/ssspiral.svg')]"
+      >
+        <div class="font-primary text-center mb-6">
+          <h1 class="text-primary text-3xl font-semibold">
+            Welcome To <span class="auto-type"></span>
+          </h1>
+        </div>
+        <div
+          class="text-secondary bg-primary py-2 px-10 rounded-xl md:text-xl waktu"
+        >
+          <span id="waktuLengkap"></span>
+        </div>
+        <div class="mt-7">
+          <div class="rounded-xl bg-primary p-5 md:p-8 shadow-xl">
+            <a
+              href="https://www.instagram.com/xii.tkj1_smuhero/"
+              target="_blank"
+            >
+              <div class="flex justify-between text-secondary">
+                <i data-feather="instagram"></i>
+                <i data-feather="chevron-right"></i>
+              </div>
+            </a>
+            <div class="font-primary mt-20 text-secondary">
+              <p class="font-bold">class instagram</p>
+              <p class="text-sm">Bytebusters</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- home end -->
+
+    <section class="flex justify-center mt-20" >
+      <div class="max-w-xl w-full flex flex-col items-center">
+        <div class="w-full flex justify-center mt-9 font-semibold font-title">
+          <a
+            id="educationBtn"
+            class="uppercase font-bold cursor-pointer text-xl mt-2 ml-2 text-primary hover:text-primary"
+          >
+            Struktur
+          </a>
+          <a
+            id="experienceBtn"
+            class="uppercase font-bold cursor-pointer mt-2 ml-4 text-xl hover:text-primary"
+          >
+            Jadwal
+          </a>
+        </div>
+        <div class="text-center mt-7 font-primary">
+          <h1 class="font-semibold  text-lg">Wali Kelas</h1>
+          <p class="py-2 px-4 bg-primary rounded-lg text-white mt-3 ">Rezha Aji Kurniawan</p>
+          <div class="">
+            <span class="block w-[3px] h-[160px] bg-primary mx-auto rounded-sm" ></span>
+          </div>
+        </div>
+        
+        <div class="flex justify-around w-full ">
+          
+          <div class="text-center  font-primary">
+            <div class="relative ">
+              <span class="block w-[175px] h-[3px]   bg-primary absolute left-[53px]" ></span>
+              <span class="block w-[3px] h-[50px]  bg-primary  mx-auto" ></span>
+              <span class="block w-[11px] h-[10px] rounded-full  bg-primary mx-auto" ></span>
+            </div>
+            <h1 class="font-semibold  text-lg">Ketua Kelas</h1>
+            <p class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3" >Aditya </p>
+            
+          </div>
+          <div class="mr-[2px]">
+            <span class="block w-[3px] h-[160px] bg-primary mx-auto rounded-sm" ></span>
+          </div>
+          <div class="text-center  font-primary">
+            <div class="relative ">
+              <span class="block w-[175px] h-[3px]  bg-primary absolute right-[53px]" ></span>
+              <span class="block w-[3px] h-[50px]  bg-primary  mx-auto" ></span>
+              <span class="block w-[11px] h-[10px] rounded-full  bg-primary mx-auto" ></span>
+            </div>
+            <h1 class="font-semibold  text-lg">Wakil Kelas</h1>
+            <p class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3">Firda</p>
+           
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="public/js/script.js"></script>
+  </body>
+</html>
