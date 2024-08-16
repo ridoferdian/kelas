@@ -51,3 +51,42 @@ setInterval(getHariTanggalDanJam, 1000);
 
 // Tampilkan langsung saat halaman dimuat
 getHariTanggalDanJam();
+
+
+ // Variabel untuk menentukan hari
+ let hari = 'Senin';
+
+        // Fungsi untuk menampilkan jadwal berdasarkan hari
+        function tampilkanJadwal() {
+            const jadwal = document.querySelectorAll('.text-center');
+            jadwal.forEach((item) => {
+                if (item.querySelector('h1').textContent === `Hari ${hari}`) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Panggil fungsi untuk menampilkan jadwal
+        tampilkanJadwal();
+
+        // Event listener untuk mengubah hari
+        document.getElementById('ubahHari').addEventListener('click', () => {
+            if (hari === 'Senin') {
+                hari = 'Selasa';
+            } else if (hari === 'Selasa') {
+                hari = 'Rabu';
+            } else if (hari === 'Rabu') {
+                hari = 'Kamis';
+            } else if (hari === 'Kamis') {
+                hari = 'Jumat';
+            } else if (hari === 'Jumat') {
+                hari = 'Sabtu';
+            } else if (hari === 'Sabtu') {
+                hari = 'Minggu';
+            } else {
+                hari = 'Senin';
+            }
+            tampilkanJadwal();
+        });

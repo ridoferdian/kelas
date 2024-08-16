@@ -20,9 +20,9 @@
       }
     </style>
   </head>
-  <body class="bg-[]">
+  <body class="bg-">
     <!-- navbar start -->
-    <section class="bg-transparent z-[999] fixed w-full left-0 top-0">
+    <header class="bg-transparent z-[999] fixed w-full left-0 top-0">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between md:justify-around mx-auto p-4 text-primary"
       >
@@ -82,7 +82,7 @@
           </ul>
         </nav>
       </div>
-    </section>
+    </header>
     <!-- navbar end -->
 
     <!-- home start -->
@@ -131,8 +131,8 @@
     </section>
     <!-- home end -->
 
-    <section class="flex justify-center mt-20" >
-      <div class="max-w-xl w-full flex flex-col items-center">
+    <section class="flex justify-center mt-20">
+      <div class="max-w-xl w-full">
         <div class="w-full flex justify-center mt-9 font-semibold font-title">
           <a
             id="educationBtn"
@@ -147,46 +147,178 @@
             Jadwal
           </a>
         </div>
-        <div class="text-center mt-7 font-primary">
-          <h1 class="font-semibold  text-lg">Wali Kelas</h1>
-          <p class="py-2 px-4 bg-primary rounded-lg text-white mt-3 ">Rezha Aji Kurniawan</p>
-          <div class="">
-            <span class="block w-[3px] h-[160px] bg-primary mx-auto " ></span>
+        <div class="w-full hidden flex-col items-center">
+          <div class="text-center mt-7 font-primary">
+            <h1 class="font-semibold text-lg">Wali Kelas</h1>
+            <p class="py-2 px-4 bg-primary rounded-lg text-white mt-3">
+              Rezha Aji Kurniawan
+            </p>
+            <div class="">
+              <span class="block w-[3px] h-[160px] bg-primary mx-auto"></span>
+            </div>
+          </div>
+          <div class="flex justify-around w-full">
+            <div class="text-center font-primary">
+              <div class="relative">
+                <span
+                  class="block w-[175px] h-[3px] bg-primary absolute left-[53px]"
+                ></span>
+                <span class="block w-[3px] h-[50px] bg-primary mx-auto"></span>
+                <span
+                  class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto"
+                ></span>
+              </div>
+              <h1 class="font-semibold text-lg">Ketua Kelas</h1>
+              <p
+                class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3"
+              >
+                Aditya
+              </p>
+            </div>
+            <div class="mr-[3px]">
+              <span
+                class="block w-[3px] h-[260px] bg-primary mx-auto rounded-sm"
+              ></span>
+            </div>
+            <div class="text-center font-primary">
+              <div class="relative">
+                <span
+                  class="block w-[175px] h-[3px] bg-primary absolute right-[53px]"
+                ></span>
+                <span class="block w-[3px] h-[50px] bg-primary mx-auto"></span>
+                <span
+                  class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto"
+                ></span>
+              </div>
+              <h1 class="font-semibold text-lg">Wakil Kelas</h1>
+              <p
+                class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3"
+              >
+                Firda
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-around w-full">
+            <div class="text-center font-primary">
+              <div class="relative">
+                <span
+                  class="block w-[175px] h-[3px] bg-primary absolute left-[73px]"
+                ></span>
+                <span class="block w-[3px] h-[50px] bg-primary mx-auto"></span>
+                <span
+                  class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto"
+                ></span>
+              </div>
+              <h1 class="font-semibold text-lg">sekretaris Kelas</h1>
+              <p
+                class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3"
+              >
+                Winda
+              </p>
+            </div>
+
+            <div class="text-center font-primary">
+              <div class="relative">
+                <span
+                  class="block w-[175px] h-[3px] bg-primary absolute right-[77px]"
+                ></span>
+                <span class="block w-[3px] h-[50px] bg-primary mx-auto"></span>
+                <span
+                  class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto"
+                ></span>
+              </div>
+              <h1 class="font-semibold text-lg">Bendahara Kelas</h1>
+              <p
+                class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3"
+              >
+                Deni
+              </p>
+            </div>
           </div>
         </div>
+        <div class="w-full flex flex-col items-center relative">
+          <!-- Jadwal untuk setiap hari -->
+          <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary">
+              <h2 class="font-semibold text-lg">Hari Senin</h2>
+              <div class="uppercase font-primary mt-2 text-sm"> 
+                  <p class="tracking-wider">m pilih</p>
+                  <p class="mt-1">pkk</p>
+              </div>
+          </div>
+          <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary absolute">
+              <h2 class="font-semibold text-lg">Hari Selasa</h2>
+              <div class="uppercase font-primary mt-2 text-sm"> 
+                  <p class="tracking-wider">kemuh</p>
+                  <p class="mt-1">tkjn</p>
+                  <p class="mt-1">pkn</p>
+              </div>
+          </div>
+          <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary absolute">
+              <h2 class="font-semibold text-lg">Hari Rabu</h2>
+              <div class="uppercase font-primary mt-2 text-sm"> 
+                  <p class="tracking-wider">bin</p>
+                  <p class="mt-1">ppj</p>
+              </div>
+          </div>
+          <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary absolute">
+              <h2 class="font-semibold text-lg">Hari Kamis</h2>
+              <div class="uppercase font-primary mt-2 text-sm"> 
+                  <p class="tracking-wider">pai</p>
+                  <p class="mt-1">big</p>
+                  <p class="mt-1">mtk</p>
+              </div>
+          </div>
+          <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary absolute">
+              <h2 class="font-semibold text-lg">Hari Jumat</h2>
+              <div class="uppercase font-primary mt-2 text-sm"> 
+                  <p class="tracking-wider">kemuh</p>
+                  <p class="mt-1">ppj</p>
+              </div>
+        </div>
+      </div>
         
-        <div class="flex justify-around w-full ">
-          
-          <div class="text-center  font-primary">
-            <div class="relative ">
-              <span class="block w-[175px] h-[3px]   bg-primary absolute left-[53px]" ></span>
-              <span class="block w-[3px] h-[50px]  bg-primary  mx-auto" ></span>
-              <span class="block w-[11px] h-[10px] rounded-full  bg-primary mx-auto" ></span>
-            </div>
-            <h1 class="font-semibold  text-lg">Ketua Kelas</h1>
-            <p class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3" >Aditya </p>
-            
-          </div>
-          <div class="mr-[3px]">
-            <span class="block w-[3px] h-[160px] bg-primary mx-auto rounded-sm" ></span>
-          </div>
-          <div class="text-center  font-primary">
-            <div class="relative ">
-              <span class="block w-[175px] h-[3px]  bg-primary absolute right-[53px]" ></span>
-              <span class="block w-[3px] h-[50px]  bg-primary  mx-auto" ></span>
-              <span class="block w-[11px] h-[10px] rounded-full  bg-primary mx-auto" ></span>
-            </div>
-            <h1 class="font-semibold  text-lg">Wakil Kelas</h1>
-            <p class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3">Firda</p>
-           
-          </div>
-        </div>
-       
       </div>
     </section>
+    <script>
+      // Variabel untuk menentukan hari
+      let hari = 'Senin';
 
+      // Fungsi untuk menampilkan jadwal berdasarkan hari
+      function tampilkanJadwal() {
+          const jadwal = document.querySelectorAll('.text-center');
+          jadwal.forEach((item) => {
+              if (item.querySelector('h2').textContent === `Hari ${hari}`) {
+                  item.classList.add('hidden');
+              } else {
+                  item.classList.remove('hidden');
+              }
+          });
+      }
+
+      // Panggil fungsi untuk menampilkan jadwal
+      tampilkanJadwal();
+
+      // Event listener untuk mengubah hari
+      document.getElementById('ubahHari').addEventListener('click', () => {
+          if (hari === 'Senin') {
+              hari = 'Selasa';
+          } else if (hari === 'Selasa') {
+              hari = 'Rabu';
+          } else if (hari === 'Rabu') {
+              hari = 'Kamis';
+          } else if (hari === 'Kamis') {
+              hari = 'Jumat';
+          } else {
+              hari = 'Senin';
+          }
+          tampilkanJadwal();
+      });
+  </script>
+
+  <button id="ubahHari">Ubah Hari</button>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="public/js/script.js"></script>
+  </body>
   </body>
 </html>
