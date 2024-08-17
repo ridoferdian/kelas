@@ -53,40 +53,34 @@ setInterval(getHariTanggalDanJam, 1000);
 getHariTanggalDanJam();
 
 
- // Variabel untuk menentukan hari
- let hari = 'Senin';
+function tampilkanJadwal() {
+    const hariIni = new Date().getDay(); // Mendapatkan hari sekarang (0 untuk Minggu, 1 untuk Senin, dst.)
+    const jadwalHariIni = document.querySelector(`[data-hari="${hariIni}"]`);
+    
+    if (jadwalHariIni) {
+        jadwalHariIni.classList.remove('hidden');
+    }
+}
 
-        // Fungsi untuk menampilkan jadwal berdasarkan hari
-        function tampilkanJadwal() {
-            const jadwal = document.querySelectorAll('.text-center');
-            jadwal.forEach((item) => {
-                if (item.querySelector('h1').textContent === `Hari ${hari}`) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
+// Panggil fungsi saat halaman dimuat
+window.addEventListener('DOMContentLoaded', tampilkanJadwal);
 
-        // Panggil fungsi untuk menampilkan jadwal
-        tampilkanJadwal();
+const struktur = document.getElementById('struktur')
+const jadwal = document.getElementById('jadwal')
+const elementStruktur = document.getElementById('elementStruktur')
+const elementJadwal = document.getElementById('elementJadwal')
 
-        // Event listener untuk mengubah hari
-        document.getElementById('ubahHari').addEventListener('click', () => {
-            if (hari === 'Senin') {
-                hari = 'Selasa';
-            } else if (hari === 'Selasa') {
-                hari = 'Rabu';
-            } else if (hari === 'Rabu') {
-                hari = 'Kamis';
-            } else if (hari === 'Kamis') {
-                hari = 'Jumat';
-            } else if (hari === 'Jumat') {
-                hari = 'Sabtu';
-            } else if (hari === 'Sabtu') {
-                hari = 'Minggu';
-            } else {
-                hari = 'Senin';
-            }
-            tampilkanJadwal();
-        });
+struktur.addEventListener('click', function() {
+    elementStruktur.classList.remove('hidden')
+    elementJadwal.classList.add('hidden')
+    struktur.classList.add('text-primary')
+    jadwal.classList.remove('text-primary')
+})
+
+jadwal.addEventListener('click', function() {
+    elementJadwal.classList.remove('hidden')
+    elementStruktur.classList.add('hidden')
+    struktur.classList.remove('text-primary')
+    jadwal.classList.add('text-primary')
+})
+
