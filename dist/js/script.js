@@ -16,6 +16,7 @@ hamburger.addEventListener('click', function() {
     navbar.classList.toggle('hidden');
 });
 
+
 feather.replace();
 
 var typed = new Typed(".auto-type", {
@@ -27,10 +28,6 @@ var typed = new Typed(".auto-type", {
 
   function getHariTanggalDanJam() {
     const hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
-    const bulan = [
-        "Januari", "Februari", "Maret", "April", "Mei", "Juni",
-        "Juli", "Agustus", "September", "Oktober", "November", "Desember"
-    ];
 
     const today = new Date();
     const namaHari = hari[today.getDay()];
@@ -84,3 +81,30 @@ jadwal.addEventListener('click', function() {
     jadwal.classList.add('text-primary')
 })
 
+
+  var TrandingSlider = new Swiper('.swiper', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2.5,
+    },
+    on: {
+      click(event) {
+        swiper.slideTo(this.clickedIndex);
+      },
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });

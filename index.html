@@ -11,12 +11,16 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/feather-icons"></script>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="dist/style.css" />
 
     <style>
       body {
-        height: 2000px;
+        height: 3000px;
       }
     </style>
   </head>
@@ -68,16 +72,16 @@
               <a href="#" class="navbar">Home</a>
             </li>
             <li>
-              <a href="#" class="navbar">struktur</a>
+              <a href="#" class="navbar">Struktur</a>
             </li>
             <li>
               <a href="#" class="navbar">Galeri Kelas</a>
             </li>
             <li>
-              <a href="#" class="navbar">Struktur Kelas</a>
+              <a href="#" class="navbar">Murid</a>
             </li>
             <li>
-              <a href="#" class="navbar">Murid</a>
+              <a href="#" class="navbar">Tenaga Pendidik</a>
             </li>
           </ul>
         </nav>
@@ -131,18 +135,19 @@
     </section>
     <!-- home end -->
 
-    <section class="flex justify-center mt-20 lg:mt-40 " >
+    <section class="flex justify-center mt-20 lg:mt-80 " >
       <div class="max-w-xl w-full">
-        <div class="w-full flex justify-center mt-9 font-semibold font-title">
+        <div class="w-full flex justify-center mt-9 font-bold font-title text-xl md:text-2xl xl:text-3xl">
           <a
             id="struktur"
-            class="uppercase font-bold cursor-pointer text-xl mt-2 mr-4 text-primary hover:text-primary"
-          >
-            Struktur
+            class="uppercase flex font-bold cursor-pointer   mt-2 mr-4 text-primary hover:text-primary">
+          
+            <p>Struktur</p>
           </a>
+          <p class="mt-2 ">&</p>
           <a
             id="jadwal"
-            class="uppercase font-bold cursor-pointer mt-2 ml-4 text-xl hover:text-primary"
+            class="uppercase font-bold cursor-pointer mt-2 ml-4  hover:text-primary"
           >
             Jadwal
           </a>
@@ -150,7 +155,7 @@
         <div class="" id="elementStruktur">
           <div class="w-full flex flex-col items-center" >
             <div class="text-center mt-7 font-primary">
-              <h1 class="font-semibold text-lg">Wali Kelas</h1>
+              <h1 class="font-semibold text-lg lg:text-xl">Wali Kelas</h1>
               <p class="py-2 px-4 bg-primary rounded-lg text-white mt-3">
                 Rezha Aji Kurniawan
               </p>
@@ -162,16 +167,16 @@
               <div class="text-center font-primary">
                 <div class="relative">
                   <span
-                    class="block w-[175px] h-[3px] bg-primary absolute left-[53px]"
+                    class="block w-[175px] h-[3px] bg-primary absolute left-[53px] lg:left-[60px] "
                   ></span>
                   <span class="block w-[3px] h-[50px] bg-primary mx-auto"></span>
                   <span
                     class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto"
                   ></span>
                 </div>
-                <h1 class="font-semibold text-lg">Ketua Kelas</h1>
+                <h1 class="font-semibold text-lg lg:text-xl">Ketua Kelas</h1>
                 <p
-                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3"
+                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3 lg:text-base"
                 >
                   Aditya
                 </p>
@@ -184,16 +189,16 @@
               <div class="text-center font-primary">
                 <div class="relative">
                   <span
-                    class="block w-[175px] h-[3px] bg-primary absolute right-[53px]"
+                    class="block w-[175px] h-[3px] bg-primary absolute right-[53px] lg:right-[60px]"
                   ></span>
                   <span class="block w-[3px] h-[50px] bg-primary mx-auto"></span>
                   <span
                     class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto"
                   ></span>
                 </div>
-                <h1 class="font-semibold text-lg">Wakil Kelas</h1>
+                <h1 class="font-semibold text-lg lg:text-xl">Wakil Kelas</h1>
                 <p
-                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3"
+                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm lg:text-base mt-3"
                 >
                   Firda
                 </p>
@@ -203,16 +208,16 @@
               <div class="text-center font-primary">
                 <div class="relative">
                   <span
-                    class="block w-[175px] h-[3px] bg-primary absolute left-[73px]"
+                    class="block w-[175px] h-[3px] bg-primary absolute left-[73px] lg:left-[79px]"
                   ></span>
                   <span class="block w-[3px] h-[50px] bg-primary mx-auto"></span>
                   <span
                     class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto"
                   ></span>
                 </div>
-                <h1 class="font-semibold text-lg">sekretaris Kelas</h1>
+                <h1 class="font-semibold text-lg lg:text-xl">sekretaris Kelas</h1>
                 <p
-                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3"
+                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3 lg:text-base"
                 >
                   Winda
                 </p>
@@ -221,16 +226,16 @@
               <div class="text-center font-primary">
                 <div class="relative">
                   <span
-                    class="block w-[175px] h-[3px] bg-primary absolute right-[77px]"
+                    class="block w-[175px] h-[3px] bg-primary absolute right-[77px] lg:right-[86px]"
                   ></span>
                   <span class="block w-[3px] h-[50px] bg-primary mx-auto"></span>
                   <span
                     class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto"
                   ></span>
                 </div>
-                <h1 class="font-semibold text-lg">Bendahara Kelas</h1>
+                <h1 class="font-semibold text-lg lg:text-xl">Bendahara Kelas</h1>
                 <p
-                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3"
+                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3 lg:text-base"
                 >
                   Deni
                 </p>
@@ -297,6 +302,54 @@
       </div>
     </section>
     
+    <section class="mt-32 lg:mt-52" >
+      <div class="text-center ">
+        <h1 class="font-title text-primary font-bold text-2xl md:text-3xl xl:text-4xl">Galeri Kelas</h1>
+      </div>
+      <div class="content">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="dist/img/swiper/1.jpg" alt="Galeri"> 
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/swiper/2.jpg" alt="Galeri"> 
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/swiper/5.jpg" alt="Galeri"> 
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/swiper/3.jpg" alt="Galeri"> 
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/swiper/7.jpg" alt="Galeri"> 
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/swiper/4.jpg" alt="Galeri"> 
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/swiper/8.jpg" alt="Galeri"> 
+          </div>
+          
+          </div>
+
+          <div class="tranding-slider-control">
+          <div class="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div class="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="dist/js/script.js"></script>
