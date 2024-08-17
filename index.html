@@ -20,7 +20,18 @@
 
     <style>
       body {
-        height: 3000px;
+        height: 5000px;
+      }
+
+      
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #eebbc3;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #232946;
       }
     </style>
   </head>
@@ -307,45 +318,103 @@
         <h1 class="font-title text-primary font-bold text-2xl md:text-3xl xl:text-4xl">Galeri Kelas</h1>
       </div>
       <div class="content">
-        <div class="swiper">
+        <div class="swiper swiper-galeri">
           <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide slider ">
             <img src="dist/img/swiper/1.jpg" alt="Galeri"> 
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide slider">
             <img src="dist/img/swiper/2.jpg" alt="Galeri"> 
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide slider">
             <img src="dist/img/swiper/5.jpg" alt="Galeri"> 
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide slider">
             <img src="dist/img/swiper/3.jpg" alt="Galeri"> 
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide slider">
             <img src="dist/img/swiper/7.jpg" alt="Galeri"> 
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide slider">
             <img src="dist/img/swiper/4.jpg" alt="Galeri"> 
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide slider">
             <img src="dist/img/swiper/8.jpg" alt="Galeri"> 
           </div>
           
           </div>
 
-          <div class="tranding-slider-control">
-          <div class="swiper-button-prev slider-arrow">
+          <div class="tranding-slider-control ">
+          <div class="swiper-button-prev slider-arrow text-primary">
             <ion-icon name="arrow-back-outline"></ion-icon>
           </div>
-          <div class="swiper-button-next slider-arrow">
+          <div class="swiper-button-next slider-arrow text-primary">
             <ion-icon name="arrow-forward-outline"></ion-icon>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination pagination"></div>
           </div>
 
         </div>
       </div>
     </section>
+
+
+    <section class="wrapper text-5xl text-primary lg:mt-20 font-semibold">
+      <div class="item item1">XII TKJ 1</div>
+      <div class="item item2">XII TKJ 1</div>
+      <div class="item item3">XII TKJ 1</div>
+      <div class="item item4">XII TKJ 1</div>
+      <div class="item item5">XII TKJ 1</div>
+      <div class="item item6">XII TKJ 1</div>
+      <div class="item item7">XII TKJ 1</div>
+      <div class="item item8">XII TKJ 1</div>
+    </section>
+
+    <section class="" >
+      <div class="container swiper" >
+        <h1>SISWA</h1>
+        <div class="slide-container " >
+          <div class="card-wrapper swiper-wrapper">
+            <div class="swiper-slide  w-40 bg-primary">
+              <div class="py-2">
+                <div class="rounded-full w-4/12 mx-auto object-cover overflow-hidden ">
+                  <img src="dist/img/murid/no-foto.png" alt="" class="object-cover">
+                </div>
+                <div class="profile-details mt-4">
+                  <a href="https://www.instagram.com/adearyaa21" target="_blank" ><i data-feather="instagram"></i></a>
+                  <div class="name-job">
+                    <h3 class="name">ADE ARYA MAHARADETA</h3>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" swiper-slide">
+              <div class=" ">
+                <div class="rounded-full w-4/12 mx-auto object-cover overflow-hidden">
+                  <img src="dist/img/murid/no-foto.png" alt="" class="object-cover">
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <div class="rounded-full w-4/12 mx-auto object-cover overflow-hidden">
+                  <img src="dist/img/murid/no-foto.png"  alt="" class="object-cover">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination mt-20"></div>
+        </div>
+        
+      </div>
+    </section>
+
+
+
+
+
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
