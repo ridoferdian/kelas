@@ -1,5 +1,5 @@
 window.onscroll = function () {
-    const header = document.querySelector("section");
+    const header = document.querySelector("header");
     const fixedNav = header.offsetTop;
   
     if (window.pageYOffset > fixedNav) {
