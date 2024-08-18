@@ -153,71 +153,125 @@
 
 @keyframes scrollLeft {
   to {
-    right: -200px;
+    right: -400px;
   }
 }
 
 .item {
-  width: 200px;
+  width: 400px;
   height: 100px;
   border-radius: 6px;
   position: absolute;
-   right: max(calc(200px * 8), calc(100% + 200px));
-  animation: scrollLeft 30s linear infinite;
+   right: max(calc(400px * 8), calc(100% + 400px));
+  animation: scrollLeft 40s linear infinite;
+}
+
+@media (min-width: 768px){
+  @keyframes scrollLeft {
+    to {
+      right: -700px;
+    }
+  }
+  
+  .wrapper {
+  height: 200px;
+
+  }
+
+ .item {
+  width: 700px;
+  right: max(calc(700px * 8), calc(100% + 700px));
+  animation: scrollLeft 40s linear infinite;
+ }
 }
 
 .item1 {
-  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  animation-delay: calc(40s / 8 * (8 - 1) * -1);
 }
 
 .item2 {
-  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  animation-delay: calc(40s / 8 * (8 - 2) * -1);
 }
 
 .item3 {
-  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  animation-delay: calc(40s / 8 * (8 - 3) * -1);
 }
 
 .item4 {
-  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  animation-delay: calc(40s / 8 * (8 - 4) * -1);
 }
 
 .item5 {
-  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  animation-delay: calc(40s / 8 * (8 - 5) * -1);
 }
 
 .item6 {
-  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  animation-delay: calc(40s / 8 * (8 - 6) * -1);
 }
 
 .item7 {
-  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  animation-delay: calc(40s / 8 * (8 - 7) * -1);
 }
 
 .item8 {
-  animation-delay: calc(30s / 8 * (8 - 8) * -1);
-}
-
-
-.warna-swiper {
-  background-color: #ccc;
-  padding-bottom: 5rem;
-  scroll-margin: 30px;
+  animation-delay: calc(40s / 8 * (8 - 8) * -1);
 }
 
 
 
-.container h1 {
+
+
+.card {
+  width: 300px;
+  border-radius: 10px 10px 0 0;
+}
+
+
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding:25px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.deskripsi {
+  font-size: 14px;
+  color: #707070;
   text-align: center;
-  margin-bottom: 3rem;
-  color: #020826;
-  font-weight: 700;
-  letter-spacing: 7px;
-  text-shadow: 2px 2px 15px rgb(51, 52, 87);
 }
-
-.slide-container {
-  margin: 0 30px;
-}
-
-

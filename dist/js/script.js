@@ -105,18 +105,14 @@ jadwal.addEventListener('click', function() {
   });
 
 
-  var galeriSwiper = new Swiper('.slide-container', {
-    effect: 'coverflow',
+
+  var swiper = new Swiper('.slide-content', {
     grabCursor: true,
     centeredSlides: true,
     loop: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 100,
-      modifier: 2.5,
-    },
+    fade: true,
+    spaceBetween: 25,
+    slidesPerView: 3,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -124,5 +120,16 @@ jadwal.addEventListener('click', function() {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    }
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      520: {
+        slidesPerView: 2,
+      },
+      950: {
+        slidesPerView: 3,
+      },
+    },
   });
