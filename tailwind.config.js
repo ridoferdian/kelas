@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["index.html"],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
       padding: "16px",
-    }, 
+    },
     extend: {
       fontFamily: {
         primary: ["Poppins", "sans-serif"],
@@ -17,8 +18,10 @@ module.exports = {
         secondary: "#fffffe",
         primary: "#232946",
         main: "#eebbc3",
-        stroke : "#121629"
-    },
+        stroke: "#EA516F",
+        headline: '#F4F4F5',
+        dark: '#161616',
+      },
     },
   },
   plugins: [],

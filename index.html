@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,8 @@
 
     <style>
       body {
-        height: 3050px;
+        height: 5000px;
+       
       }
 
       
@@ -46,7 +47,7 @@
           target="_blank"
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <span class="self-center text-2xl font-semibold font-primary"
+          <span class="self-center text-2xl font-semibold font-primary dark:text-headline"
             >XII TKJ 1</span
           >
         </a>
@@ -57,7 +58,7 @@
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden"
         >
           <svg
-            class="w-5 h-5"
+            class="w-5 h-5 dark:text-headline"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -77,33 +78,38 @@
           id="navbar"
         >
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-stroke rounded-lg bg-secondary md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent"
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 shadow-lg border border-stroke rounded-lg bg-secondary md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:text-headline dark:bg-primary dark:md:bg-transparent dark:border-primary dark:shadow-slate-500"
           >
             <li>
-              <a href="#" class="navbar">Home</a>
+              <a href="#home" class="navbar">Home</a>
             </li>
             <li>
-              <a href="#" class="navbar">Struktur</a>
+              <a href="#strukturJadwal" class="navbar">Struktur</a>
             </li>
             <li>
-              <a href="#" class="navbar">Galeri Kelas</a>
+              <a href="#galeri" class="navbar">Galeri Kelas</a>
             </li>
             <li>
-              <a href="#" class="navbar">Murid</a>
+              <a href="#murid" class="navbar">Murid</a>
             </li>
             <li>
-              <a href="#" class="navbar">Tenaga Pendidik</a>
+              <a href="#menfes" class="navbar">Menfes</a>
+            </li>
+            <li>
+              <button type="button" id="buttonMode" class="border border-primary rounded-md px-3 hover:bg-main mt-2 md:mt-1 bg-secondary dark:border-headline dark:bg-primary" >
+                <i class="fa-solid fa-moon" id="icon" ></i>
+              </button>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- navbar end -->
-
+    
     <!-- home start -->
-    <section class="relative flex justify-center items-center">
+    <section class="relative flex justify-center items-center dark:bg-primary transition-colors duration-300 " id="home">
       <!-- Section 2 (Background Image) -->
-      <div class="absolute md:inset-0 bottom-0">
+      <div class="absolute md:inset-0 bottom-0 ">
         <img
           class="w-full h-auto object-cover"
           src="dist/img/background.png"
@@ -146,24 +152,24 @@
     </section>
     <!-- home end -->
 
-    <section class="flex justify-center mt-20 lg:mt-80 " >
+    <section class="flex justify-center mt-20 lg:mt-80 scroll-mt-10  " id="strukturJadwal">
       <div class="max-w-xl w-full">
-        <div class="w-full flex justify-center mt-9 font-bold font-title text-xl md:text-2xl xl:text-3xl uppercase">
+        <div class="w-full flex justify-center mt-9 text-2xl md:text-3xl xl:text-4xl  font-title font-bold uppercase">
           <a
             id="struktur"
-            class="uppercase flex font-bold cursor-pointer   mt-2 mr-4 text-primary hover:text-primary">
+            class="mt-2 mr-4 cursor-pointer text-primary hover:text-primary">
           
             <p>Struktur</p>
           </a>
           <p class="mt-2 ">&</p>
           <a
             id="jadwal"
-            class="uppercase font-bold cursor-pointer mt-2 ml-4  hover:text-primary"
+            class="cursor-pointer mt-2 ml-4  hover:text-primary"
           >
             Jadwal
           </a>
         </div>
-        <div class="" id="elementStruktur">
+        <div class="hidden" id="elementStruktur">
           <div class="w-full flex flex-col items-center" >
             <div class="text-center mt-7 font-primary">
               <h1 class="font-semibold text-lg lg:text-xl">Wali Kelas</h1>
@@ -254,58 +260,17 @@
             </div>
           </div>
         </div>
-        <div class="hidden" id="elementJadwal">
+        <div class="" id="elementJadwal">
           <div class=" w-full flex flex-col items-center relative" >
             <!-- Jadwal untuk setiap hari -->
-            <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary hidden" data-hari="1">
+            <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary hidden" data-hari="2">
                 <h2 class="font-semibold text-lg">Hari Senin</h2>
                 <div class="uppercase font-primary mt-2 text-sm"> 
                     <p class="tracking-wider">m pilih</p>
                     <p class="mt-1">pkk</p>
                 </div>
             </div>
-            <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary hidden" data-hari="2">
-                <h2 class="font-semibold text-lg">Hari Selasa</h2>
-                <div class="uppercase font-primary mt-2 text-sm"> 
-                    <p class="tracking-wider">kemuh</p>
-                    <p class="mt-1">tkjn</p>
-                    <p class="mt-1">pkn</p>
-                </div>
-            </div>
-            <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary hidden" data-hari="3">
-                <h2 class="font-semibold text-lg">Hari Rabu</h2>
-                <div class="uppercase font-primary mt-2 text-sm"> 
-                    <p class="tracking-wider">bin</p>
-                    <p class="mt-1">ppj</p>
-                </div>
-            </div>
-            <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary hidden" data-hari="4">
-                <h2 class="font-semibold text-lg">Hari Kamis</h2>
-                <div class="uppercase font-primary mt-2 text-sm"> 
-                    <p class="tracking-wider">pai</p>
-                    <p class="mt-1">big</p>
-                    <p class="mt-1">mtk</p>
-                </div>
-            </div>
-            <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary hidden" data-hari="5">
-                <h2 class="font-semibold text-lg">Hari Jumat</h2>
-                <div class="uppercase font-primary mt-2 text-sm"> 
-                    <p class="tracking-wider">kemuh</p>
-                    <p class="mt-1">ppj</p>
-                </div>
-            </div>
-            <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary hidden" data-hari="6">
-                <h2 class="font-semibold text-lg">Hari Sabtu</h2>
-                <div class="uppercase font-primary mt-2 text-sm"> 
-                    <p class="tracking-wider">tidak ada jadwal</p>
-                </div>
-            </div>
-            <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary hidden" data-hari="0">
-                <h2 class="font-semibold text-lg">Hari Minggu</h2>
-                <div class="uppercase font-primary mt-2 text-sm"> 
-                    <p class="tracking-wider">tidak ada jadwal</p>
-                </div>
-            </div>
+
           </div>
         </div>
         
@@ -313,9 +278,9 @@
       </div>
     </section>
     
-    <section class="mt-32 lg:mt-52" >
+    <section class="mt-32 lg:mt-52 scroll-mt-20" id="galeri">
       <div class="text-center ">
-        <h1 class="font-title text-primary font-bold text-2xl md:text-3xl xl:text-4xl uppercase">Galeri Kelas</h1>
+        <h1 class="text-2xl md:text-3xl xl:text-4xl text-primary font-title font-bold uppercase">Galeri Kelas</h1>
       </div>
       <div class="content">
         <div class="swiper swiper-galeri">
@@ -358,7 +323,7 @@
     </section>
 
 
-    <section class="wrapper text-7xl md:text-9xl lg:text-[140px] text-main lg:mt-20 font-semibold font-ubuntu">
+    <section class="wrapper text-7xl md:text-9xl lg:text-[140px] text-main lg:mt-20 font-semibold font-ubuntu ">
       <div class="item item1">XII TKJ 1 </div>
       <div class="item item2">XII TKJ 1</div>
       <div class="item item3">XII TKJ 1</div>
@@ -369,7 +334,7 @@
       <div class="item item8">XII TKJ 1</div>
     </section>
 
-    <section class="mt-24 lg:mt-36 ">
+    <section class="mt-24 lg:mt-36 scroll-mt-20" id="murid" >
       <div class="text-center">
         <h1 class="text-2xl md:text-3xl xl:text-4xl text-primary font-title font-bold uppercase">Murid</h1>
       </div>
@@ -740,9 +705,36 @@
           </div>
         </div>
       </div>
-     </section>
+    </section>
     
-
+    <section class="mt-24 scroll-mt-20" id="menfes">
+    <div class="flex flex-col items-center">
+      <div class="text-center">
+        <h1 class="text-2xl md:text-3xl xl:text-4xl text-primary font-title font-bold uppercase" >Menfes</h1>
+      </div>
+      <div class="mx-auto mt-10">
+        <form action="">
+          <div class="w-full font-primary px-10">
+            <div class="">
+              <label for="from">From :</label>
+              <input type="text" name="from" class="input" id="from">
+            </div>
+            <div class="mt-5">
+              <label for="to">To :</label>
+              <input type="text" name="to" class="input" id="to">
+            </div>
+            <div class="mt-5">
+              <label for="pesan">Pesan :</label>
+             <textarea name="pesan" id="pesan" class="input" rows="4" cols="40"></textarea>
+            </div>
+                    <div class="mt-5">
+              <button type="submit" class="py-2 px-3 bg-primary text-secondary w-full rounded-md" >Kirim</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </section>
 
 
 
@@ -752,6 +744,7 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/5c5a4a3ebe.js" crossorigin="anonymous"></script>
     <script src="dist/js/script.js"></script>
   </body>
   </body>

@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 .navbar {
-    @apply hover:text-main   ;
+    @apply hover:text-main mt-1 block ;
 }
 
+.input {
+    @apply block mt-1 w-full py-2 px-3 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary ;
+}
