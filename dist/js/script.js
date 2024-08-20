@@ -22,19 +22,28 @@ window.addEventListener("click", function (e) {
   }
 });
 
-const buttonDark = document.getElementById('buttonMode');
-const html = document.querySelector('html');
-const icon = document.getElementById('icon');
+const buttonDark = document.getElementById("buttonMode");
+const html = document.querySelector("html");
+const icon = document.getElementById("icon");
 
-buttonDark.addEventListener('click', function() {
-  html.classList.toggle('dark');
-  if(html.classList.contains('dark')){
-    icon.className = 'fa-solid fa-sun' ;
-  }else {
-    icon.className = 'fa-solid fa-moon' ;
-
+buttonDark.addEventListener("click", function () {
+  html.classList.toggle("dark");
+  if (html.classList.contains("dark")) {
+    icon.className = "fa-solid fa-sun";
+    localStorage.theme = "dark";
+  } else {
+    icon.className = "fa-solid fa-moon";
+    localStorage.theme = "light";
   }
 });
+
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  html.classList.add('dark');
+  icon.className = 'fa-solid fa-sun';
+} else {
+  html.classList.remove('dark');
+  icon.className = 'fa-solid fa-moon';
+}
 
 feather.replace();
 
