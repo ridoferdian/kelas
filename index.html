@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smoot">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,8 +23,6 @@
         height: 5000px;
        
       }
-
-      
       .swiper-pagination-bullet {
         width: 10px;
         height: 10px;
@@ -40,10 +38,10 @@
         document.documentElement.classList.add('dark')
       } else {
         document.documentElement.classList.remove('dark')
-}
+      }
     </script>
   </head>
-  <body class="bg-">
+  <body class="dark:bg-primary transition-colors duration-500">
     <!-- navbar start -->
     <header class="bg-transparent z-[999] fixed w-full left-0 top-0">
       <div
@@ -99,13 +97,20 @@
             <li>
               <a href="#murid" class="navbar">Murid</a>
             </li>
-            <li>
+            <li class="">
               <a href="#menfes" class="navbar">Menfes</a>
             </li>
-            <li>
-              <button type="button" id="buttonMode" class="border border-primary rounded-md px-3 hover:bg-main mt-2 md:mt-1 bg-secondary dark:border-headline dark:bg-primary" >
-                <i class="fa-solid fa-moon" id="icon" ></i>
-              </button>
+            <li class="flex items-center justify-center mt-3 md:mt-1">
+              <input type="checkbox" class="hidden" id="dark-toggle" >
+              <label for="dark-toggle">
+                <div class="flex h-5 w-12 cursor-pointer items-center rounded-full p-1 bg-slate-500 relative ">
+                  <i class="fa-solid fa-sun absolute -z-1 left-2"   ></i>
+                  <i class="fa-solid fa-moon absolute -z-1 right-2 text-sm"  ></i>
+
+                  <div class="toggle-circle h-5 w-5 rounded-full bg-white duration-300 ease-in-out z-10 ">
+                  </div>
+                </div>
+              </label>
             </li>
           </ul>
         </nav>
@@ -114,11 +119,11 @@
     <!-- navbar end -->
     
     <!-- home start -->
-    <section class="relative flex justify-center items-center dark:bg-primary transition-colors duration-300 " id="home">
+    <section class="relative flex justify-center items-center dark:bg-primary  " id="home">
       <!-- Section 2 (Background Image) -->
-      <div class="absolute md:inset-0 bottom-0 ">
+      <div class="absolute md:inset-0 bottom-0 dark:bg-primary">
         <img
-          class="w-full h-auto object-cover"
+          class="w-full h-auto object-cover dark:bg-primary"
           src="dist/img/background.png"
           alt="Background Image"
         />
@@ -139,7 +144,7 @@
           <span id="waktuLengkap"></span>
         </div>
         <div class="mt-7">
-          <div class="rounded-xl bg-primary p-5 md:p-8 shadow-xl waktu">
+          <div class="rounded-xl bg-primary p-5 md:p-8 shadow-xl waktu ">
             <a
               href="https://www.instagram.com/xii.tkj1_smuhero/"
               target="_blank"
@@ -159,70 +164,71 @@
     </section>
     <!-- home end -->
 
-    <section class="flex justify-center mt-20 lg:mt-80 scroll-mt-10  " id="strukturJadwal">
+    <section class="flex justify-center mt-20 lg:mt-80 scroll-mt-10 dark:bg-primary " id="strukturJadwal">
       <div class="max-w-xl w-full">
-        <div class="w-full flex justify-center mt-9 text-2xl md:text-3xl xl:text-4xl  font-title font-bold uppercase">
+        <div class="w-full flex justify-center mt-9 text-2xl md:text-3xl xl:text-4xl font-title font-bold uppercase">
           <a
             id="struktur"
-            class="mt-2 mr-4 cursor-pointer text-primary hover:text-primary">
-          
+            class="mt-2 mr-4 cursor-pointer text-primary hover:text-primary dark:text-white dark:hover:text-main"
+          >
             <p>Struktur</p>
           </a>
-          <p class="mt-2 ">&</p>
+          <p class="mt-2 dark:text-white">&</p>
           <a
             id="jadwal"
-            class="cursor-pointer mt-2 ml-4  hover:text-primary"
+            class="cursor-pointer mt-2 ml-4 hover:text-primary dark:text-white dark:hover:text-main"
           >
             Jadwal
           </a>
         </div>
-        <div class="hidden" id="elementStruktur">
+        
+        <div class="" id="elementStruktur">
           <div class="w-full flex flex-col items-center" >
             <div class="text-center mt-7 font-primary">
-              <h1 class="font-semibold text-lg lg:text-xl">Wali Kelas</h1>
-              <p class="py-2 px-4 bg-primary rounded-lg text-white mt-3">
+              <h1 class="font-semibold text-lg lg:text-xl text-subHeadline dark:text-headline">Wali Kelas</h1>
+              <p class="py-2 px-4 bg-primary rounded-lg text-white mt-3 dark:bg-main dark:text-subHeadline">
                 Rezha Aji Kurniawan
               </p>
               <div class="">
-                <span class="block w-[3px] h-[160px] bg-primary mx-auto"></span>
+                <span class="block w-[3px] h-[160px] bg-primary mx-auto dark:bg-main"></span>
               </div>
             </div>
             <div class="flex justify-around w-full">
               <div class="text-center font-primary">
                 <div class="relative">
                   <span
-                    class="block w-[175px] h-[3px] bg-primary absolute left-[53px] lg:left-[60px] "
+                    class="block w-[175px] h-[3px] bg-primary dark:bg-main absolute left-[53px] lg:left-[60px] "
                   ></span>
-                  <span class="block w-[3px] h-[50px] bg-primary mx-auto"></span>
+                  <span class="block w-[3px] h-[50px] bg-primary mx-auto dark:bg-main"></span>
                   <span
-                    class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto"
+                    class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto dark:bg-main"
                   ></span>
                 </div>
-                <h1 class="font-semibold text-lg lg:text-xl">Ketua Kelas</h1>
+                <h1 class="font-semibold text-lg lg:text-xl text-subHeadline  dark:text-headline">Ketua Kelas</h1>
                 <p
-                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3 lg:text-base"
+                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3 lg:text-base dark:bg-main dark:text-subHeadline"
                 >
                   Aditya
                 </p>
               </div>
               <div class="mr-[3px]">
                 <span
-                  class="block w-[3px] h-[260px] bg-primary mx-auto rounded-sm"
+                  class="block w-[3px] h-[260px] bg-primary mx-auto rounded-sm dark:bg-main"
                 ></span>
               </div>
               <div class="text-center font-primary">
                 <div class="relative">
                   <span
-                    class="block w-[175px] h-[3px] bg-primary absolute right-[53px] lg:right-[60px]"
+                    class="block w-[175px] h-[3px] bg-primary absolute right-[53px] lg:right-[60px] dark:bg-main"
                   ></span>
-                  <span class="block w-[3px] h-[50px] bg-primary mx-auto"></span>
+                  <span class="block w-[3px] h-[50px] bg-primary mx-auto dark:bg-main"></span>
                   <span
-                    class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto"
+                    class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto dark:bg-main"
                   ></span>
                 </div>
-                <h1 class="font-semibold text-lg lg:text-xl">Wakil Kelas</h1>
+                <h1 class="font-semibold text-lg lg:text-xl text-subHeadline  dark:text-headline ">Wakil Kelas</h1>
                 <p
-                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm lg:text-base mt-3"
+                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm lg:text-base mt-3 dark:bg-main dark:text-subHeadline"
                 >
                   Firda
                 </p>
@@ -232,16 +238,16 @@
               <div class="text-center font-primary">
                 <div class="relative">
                   <span
-                    class="block w-[175px] h-[3px] bg-primary absolute left-[73px] lg:left-[79px]"
+                    class="block w-[175px] h-[3px] bg-primary absolute left-[73px] lg:left-[79px] dark:bg-main"
                   ></span>
-                  <span class="block w-[3px] h-[50px] bg-primary mx-auto"></span>
+                  <span class="block w-[3px] h-[50px] bg-primary mx-auto dark:bg-main"></span>
                   <span
-                    class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto"
+                    class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto dark:bg-main"
                   ></span>
                 </div>
-                <h1 class="font-semibold text-lg lg:text-xl">sekretaris Kelas</h1>
+                <h1 class="font-semibold text-lg lg:text-xl text-subHeadline  dark:text-headline">sekretaris Kelas</h1>
                 <p
-                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3 lg:text-base"
+                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3 lg:text-base dark:bg-main dark:text-subHeadline"
                 >
                   Winda
                 </p>
@@ -250,16 +256,16 @@
               <div class="text-center font-primary">
                 <div class="relative">
                   <span
-                    class="block w-[175px] h-[3px] bg-primary absolute right-[77px] lg:right-[86px]"
+                    class="block w-[175px] h-[3px] bg-primary absolute right-[77px] lg:right-[86px] dark:bg-main"
                   ></span>
-                  <span class="block w-[3px] h-[50px] bg-primary mx-auto"></span>
+                  <span class="block w-[3px] h-[50px] bg-primary mx-auto dark:bg-main"></span>
                   <span
-                    class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto"
+                    class="block w-[11px] h-[10px] rounded-full bg-primary mx-auto dark:bg-main"
                   ></span>
                 </div>
-                <h1 class="font-semibold text-lg lg:text-xl">Bendahara Kelas</h1>
+                <h1 class="font-semibold text-lg lg:text-xl text-subHeadline dark:text-headline ">Bendahara Kelas</h1>
                 <p
-                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3 lg:text-base"
+                  class="py-2 px-4 bg-primary rounded-lg text-white text-sm mt-3 lg:text-base dark:bg-main dark:text-subHeadline"
                 >
                   Deni
                 </p>
@@ -267,14 +273,178 @@
             </div>
           </div>
         </div>
-        <div class="" id="elementJadwal">
+        <div class="hidden" id="elementJadwal">
           <div class=" w-full flex flex-col items-center relative" >
             <!-- Jadwal untuk setiap hari -->
-            <div class="text-center mt-7 py-2 px-10 rounded-md bg-primary text-secondary hidden" data-hari="2">
-                <h2 class="font-semibold text-lg">Hari Senin</h2>
-                <div class="uppercase font-primary mt-2 text-sm"> 
-                    <p class="tracking-wider">m pilih</p>
-                    <p class="mt-1">pkk</p>
+            <div class="text-center mt-7 py-2 px-10 rounded-md font-primary text-primary dark:text-headline hidden" data-hari="1">
+                <h2 class="font-semibold text-lg w-56 lg:w-72" >Hari Senin</h2>
+                <div class=" font-primary mt-2 text "> 
+                    <div class="flex justify-between border-y-2 py-2 border-primary dark:border-main">
+                      <p>Upacara</p>
+                      <p>6:45 - 7:25</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Mapel Pilihan</p>
+                      <p>7:25 - 9:10</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Istirahat</p>
+                      <p>9:10 - 9:40</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Mapel Pilihan</p>
+                      <p>9:40 - 10:25</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Istirahat</p>
+                      <p>10:25 - 12:25</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>PKK</p>
+                      <p>12:25 - 14:30</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-7 py-2 px-10 rounded-md font-primary text-primary dark:text-headline hidden" data-hari="2">
+                <h2 class="font-semibold text-lg w-56 lg:w-72" >Hari Selasa</h2>
+                <div class=" font-primary mt-2 text "> 
+                    <div class="flex justify-between border-y-2 py-2 border-primary dark:border-main">
+                      <p>Kemuh</p>
+                      <p>6:45 - 7:55</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>TKJN</p>
+                      <p>7:55 - 8:30</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Ngaji</p>
+                      <p>8:30 - 9:10</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Istirahat</p>
+                      <p>9:10 - 9:40</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>TKJN</p>
+                      <p>9:40 - 11:25</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Istirahat</p>
+                      <p>11:25 - 12:25</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>TKJN</p>
+                      <p>12:25 - 13:25</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>PKN</p>
+                      <p>13:25 - 14:30</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-7 py-2 px-10 rounded-md font-primary text-primary dark:text-headline hidden" data-hari="3">
+                <h2 class="font-semibold text-lg w-56 lg:w-72" >Hari Rabu</h2>
+                <div class=" font-primary mt-2 text "> 
+                    <div class="flex justify-between border-y-2 py-2 border-primary dark:border-main">
+                      <p>BInd</p>
+                      <p>6:45 - 8:30</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Ngaji</p>
+                      <p>8:30 - 9:10</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Istirahat</p>
+                      <p>9:10 - 9:40</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>BInd</p>
+                      <p>9:40 - 10:15</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>PPJ</p>
+                      <p>10:15 - 11:25</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Istirahat</p>
+                      <p>11:25 - 12:25</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>PPJ</p>
+                      <p>12:25 - 14:30</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="text-center mt-7 py-2 px-10 rounded-md font-primary text-primary dark:text-headline hidden" data-hari="4">
+                <h2 class="font-semibold text-lg w-56 lg:w-72" >Hari Kamis</h2>
+                <div class=" font-primary mt-2 text "> 
+                    <div class="flex justify-between border-y-2 py-2 border-primary dark:border-main">
+                      <p>PAI</p>
+                      <p>6:45 - 8:30</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Ngaji</p>
+                      <p>8:30 - 9:10</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Istirahat</p>
+                      <p>9:10 - 9:40</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>BIG</p>
+                      <p>9:40 - 11:25</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Istirahat</p>
+                      <p>11:25 - 12:25</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>MTK</p>
+                      <p>12:25 - 14:30</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="text-center mt-7 py-2 px-10 rounded-md font-primary text-primary dark:text-headline hidden" data-hari="5">
+                <h2 class="font-semibold text-lg w-56 lg:w-72" >Hari Jumat</h2>
+                <div class=" font-primary mt-2 text "> 
+                    <div class="flex justify-between border-y-2 py-2 border-primary dark:border-main">
+                      <p>Asmaul Husna</p>
+                      <p>6:45 - 7:00</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>ASJ</p>
+                      <p>7:00 - 8:40</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Istirahat</p>
+                      <p>8:40 - 9:00</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>BIG</p>
+                      <p>9:00 - 9:50</p>
+                    </div>
+                    <div class="jadwal">
+                      <p>Arab</p>
+                      <p>9:50 - 10:40</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-7 py-2 px-10 rounded-md font-primary text-primary dark:text-headline hidden" data-hari="6">
+                <h2 class="font-semibold text-lg w-56 lg:w-72" >Hari Sabtu</h2>
+                <div class=" font-primary mt-2 text "> 
+                    <div class=" border-y-2 py-2 border-primary dark:border-main">
+                      <p>Tidak Ada Jadwal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-7 py-2 px-10 rounded-md font-primary text-primary dark:text-headline hidden" data-hari="0">
+                <h2 class="font-semibold text-lg w-56 lg:w-72" >Hari Minggu</h2>
+                <div class=" font-primary mt-2 text "> 
+                    <div class=" border-y-2 py-2 border-primary dark:border-main">
+                      <p>Tidak Ada Jadwal</p>
+                    </div>
                 </div>
             </div>
 
@@ -742,9 +912,6 @@
       </div>
     </div>
     </section>
-
-
-
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

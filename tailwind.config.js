@@ -20,7 +20,7 @@ module.exports = {
         main: "#eebbc3",
         stroke: "#EA516F",
         headline: '#F4F4F5',
-        dark: '#161616',
+        subHeadline: '#1f1235'
       },
     },
   },

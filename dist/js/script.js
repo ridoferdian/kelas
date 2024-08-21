@@ -22,27 +22,27 @@ window.addEventListener("click", function (e) {
   }
 });
 
-const buttonDark = document.getElementById("buttonMode");
+const darkToggle = document.querySelector("#dark-toggle");
 const html = document.querySelector("html");
-const icon = document.getElementById("icon");
 
-buttonDark.addEventListener("click", function () {
-  html.classList.toggle("dark");
-  if (html.classList.contains("dark")) {
-    icon.className = "fa-solid fa-sun";
+darkToggle.addEventListener("click", function () {
+  if (darkToggle.checked) {
+    html.classList.add("dark");
     localStorage.theme = "dark";
   } else {
-    icon.className = "fa-solid fa-moon";
+    html.classList.remove("dark");
     localStorage.theme = "light";
   }
 });
 
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  html.classList.add('dark');
-  icon.className = 'fa-solid fa-sun';
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  darkToggle.checked = true;
 } else {
-  html.classList.remove('dark');
-  icon.className = 'fa-solid fa-moon';
+  darkToggle.checked = false;
 }
 
 feather.replace();
@@ -97,16 +97,23 @@ const elementJadwal = document.getElementById("elementJadwal");
 struktur.addEventListener("click", function () {
   elementStruktur.classList.remove("hidden");
   elementJadwal.classList.add("hidden");
-  struktur.classList.add("text-primary");
-  jadwal.classList.remove("text-primary");
+
+  // Saat "Struktur" aktif
+  struktur.classList.add("text-primary", "dark:text-main");
+  jadwal.classList.remove("text-primary", "dark:text-main");
+  jadwal.classList.add("dark:text-white"); // Mengembalikan warna teks default ke putih
 });
 
 jadwal.addEventListener("click", function () {
   elementJadwal.classList.remove("hidden");
   elementStruktur.classList.add("hidden");
-  struktur.classList.remove("text-primary");
-  jadwal.classList.add("text-primary");
+
+  // Saat "Jadwal" aktif
+  jadwal.classList.add("text-primary", "dark:text-main");
+  struktur.classList.remove("text-primary", "dark:text-main");
+  struktur.classList.add("dark:text-white"); // Mengembalikan warna teks default ke putih
 });
+
 
 var galeriSwiper = new Swiper(".swiper-galeri", {
   effect: "coverflow",
