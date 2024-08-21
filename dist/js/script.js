@@ -164,3 +164,7 @@ var swiper = new Swiper(".slide-content", {
     },
   },
 });
+
+AOS.init({
+  once: true,
+});
